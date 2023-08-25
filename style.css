@@ -1,0 +1,158 @@
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --red: hsl(0, 100%, 67%);
+    --black: hsl(0, 0%, 8%)
+}
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+    width: 40%;
+    border-radius: 20px 20px 150px 20px;
+    padding: 30px;
+}
+
+.input-data{
+    display: flex;
+    gap: 20px;
+}
+
+input{
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+    width: 80px;
+    padding: 10px 30px 10px 15px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+h5{
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+    font-size: 0.6rem;
+}
+
+hr{
+    margin: 40px 40px 30px 0px;
+    border-color: hsla(0, 0%, 86%, 0.342);
+}
+
+.arrow{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    margin-bottom: -80px;
+    margin-left: 85%;
+}
+
+img{
+    height: 32px;
+    width: 32px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.output{
+    font-size: 2.6rem;
+    font-style: italic;
+}
+
+span{
+    color: var(--purple);
+}
+
+.input_invalid{
+    border: 1px solid red;
+}
+
+.invalid_msg{
+    display: none;
+    color: red;
+}
+
+.show{
+    display: block;
+}
+
+@media (hover: hover) {
+    input:focus{
+        border-color: var(--purple);
+        cursor: pointer;
+        outline: var(--purple);
+    }
+
+    .arrow:hover{
+        background-color: var(--black);
+    }
+}
+
+@media screen and (max-width:450px) and (orientation: portrait) {
+    .container{
+        background-color: hsl(0, 0%, 100%);
+        height: auto;
+        width: auto;
+        border-radius: 20px 20px 150px 20px;
+        padding: 35px 20px;
+    }
+
+    .input-data{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    input{
+        font-size: 1rem;
+        color: black;
+        font-weight: 500;
+        width: 50px;
+        padding: 8px 12px 8px 10px;
+        border-radius: 8px;
+        border: 1px solid hsl(0, 0%, 86%);
+    }
+
+    h5{
+        font-size: 0.6rem;
+    }
+
+    hr{
+        margin: 50px 20px 30px 20px;
+    }
+    
+    .arrow{
+        position: relative;
+        height: 60px;
+        width: 60px;
+        margin: 20px 40% -80px;
+    }
+    
+    img{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    
+    .output{
+        font-size: 2.2rem;
+        font-style: italic;
+        padding: 0;
+    }
+}
